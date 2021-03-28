@@ -12,29 +12,14 @@ public class EightQueens {
 
     public static void main(String[] args)
     {
-        //char[][] chessBoard = new 
         EightQueens board = new EightQueens();
-        board.originalBoard();
+        board.printBoard(chessBoard);
+        //getBoard();
     }
 
-    public void originalBoard()
-    {
-        char[][] board = {{0, 0, 0, 0, 0, 0, 0, 0},
-                                {0, 0, 0, 0, 0, 0, 0, 0},
-                                {0, 0, 0, 0, 0, 0, 0, 0},
-                                {0, 0, 0, 0, 0, 0, 0, 0},
-                                {0, 0, 0, 0, 0, 0, 0, 0},
-                                {0, 0, 0, 0, 0, 0, 0, 0},
-                                {0, 0, 0, 0, 0, 0, 0, 0},
-                                {0, 0, 0, 0, 0, 0, 0, 0} };
-        printBoard(chessBoard);
-        setQueen(0, 0);
-
-    }
     //method getBoard
-    public static void printBoard(char[][] chessBoard){
-
-        //board = chessBoard[][];
+    public static void printBoard(char[][] chessBoard)
+    {
         // to create the original board without any queens
         //char[][] chessBoard = new char[sizeBoard][sizeBoard];
         
@@ -49,12 +34,13 @@ public class EightQueens {
             }
             System.out.println();
         }
-        //setQueen(0, 0);
+        
         
     }
 
     public static void getBoard(){
-        setQueen(1,1);
+        //setQueen(1,1);
+        //setQueen(2,7);
 
     }
 
@@ -129,8 +115,5 @@ public class EightQueens {
         return false;
 
     }
-
-    
-
 
 }
